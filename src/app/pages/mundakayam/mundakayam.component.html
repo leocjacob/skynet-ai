@@ -1,0 +1,38 @@
+
+  <mat-card class="example-card"> 
+    <mat-card-title>Water Tank Motor 
+        
+    </mat-card-title>
+
+    <mat-card-subtitle>turn on/off motor of panchayath water connection tank</mat-card-subtitle>
+    <mat-chip-list aria-label="Fish selection">
+        <mat-chip style="background-color:green" selected>Status: ON</mat-chip>
+        <mat-chip style="background-color:grey" selected>Status: OFF</mat-chip>
+        </mat-chip-list>
+    <mat-card-content>
+        
+        <h3>Water Level Indicator</h3>
+        <p>Current Water Level is at {{progress}}% </p>
+        <div style="position: relative">
+            <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+            <span [ngStyle]="{'left': progress + '%'}"></span>
+          </div>
+      </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button class="button-on">ON</button>
+        <button mat-raised-button class="button-off">OFF</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card"> 
+    <mat-card-title>Outside Lights</mat-card-title>
+    <mat-card-subtitle>turn on/off lights outside house</mat-card-subtitle>
+    <mat-chip-list aria-label="Fish selection">
+        <mat-chip style="background-color:green" selected>Status: ON</mat-chip>
+        <mat-chip style="background-color:grey" selected>Status: OFF</mat-chip>
+        </mat-chip-list>
+    <mat-card-actions>
+        <button mat-raised-button class="button-on">ON</button>
+        <button mat-raised-button class="button-off">OFF</button>
+    </mat-card-actions>
+</mat-card>
